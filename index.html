@@ -94,46 +94,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h3>Photography</h3>
-                    <hr class="star-primary">
-                    <div id="appnextiframe"></div>
-
-                    <script type="text/javascript">
-                        (function() {
-                            var Appnext = {
-                                android_id: '9b6493b4-3269-4587-a0a3-bc7d95e34331',
-                                ios_id: '8384ea60-083b-42d2-9e9f-1bd6e27e055e',
-                                cat: '7',
-                                cnt: '',
-                                pbk: '',
-                                mute: '',
-                                creative: '',
-                                subid: '',
-                                pview: '',
-                                show_skip: '',
-                                parent_url: window.location.origin,
-                                b_title: "",
-                                title: ""
-                            };
-                            var block = document.querySelector('#appnextiframe')
-                            var iframe = document.createElement('iframe');
-                            iframe.style.width = '300px';
-                            iframe.style.height = '250px';
-                            iframe.style.border = 0;
-                            var src = 'https://appnext-a.akamaihd.net/tools/tags/widget300x250/index.html?';
-                            for (var param in Appnext) src += '&' + param + '=' + Appnext[param];
-                            iframe.src = src;
-                            block.appendChild(iframe);
-                            window.addEventListener("message", function(event) {
-                                var origin = event.origin || event.originalEvent.origin;
-                                if (origin !== "https://appnext-a.akamaihd.net") return;
-                                if (event.data == 'noAds') {
-                                    block.removeChild(iframe);
-                                }
-
-                            }, false);
-                        })();
-
-                    </script>
+                    
                 </div>
             </div>
         </div>
